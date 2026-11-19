@@ -72,11 +72,9 @@ twobody-dynamics-lab/
 │   ├── ui.js               The application: views, controls, graphs, experiments, sweep, compare, report.
 │   ├── shell.html          HTML and CSS skeleton with placeholders for the scripts.
 │   └── build.py            Builds index.html from the files above.
-├── validation/
+└── validation/
 │   ├── validate.js         Checks the physics against closed-form results (see section 8).
 │   └── results.txt         Output of the last validation run.
-└── docs/
-    └── voiceover_script.md Scene-by-scene script used for the video walkthrough.
 ```
 
 `core.js` and `missions.js` contain all of the physics and have no dependence on the browser. The validation script loads exactly these files, so the numbers in section 8 come from the same code the app runs.
