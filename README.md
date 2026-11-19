@@ -6,7 +6,7 @@ A browser-based simulator and teaching lab for the two-body problem. It integrat
 
 - **Live app:** <https://shahdivya-lab.github.io/twobody-dynamics-lab/>
 - **Repository:** <https://github.com/shahdivya-lab/twobody-dynamics-lab>
-- **Video walkthrough:** submitted separately with the ME206 assignment (6 min 41 s)
+- **Video walkthrough:** <https://youtu.be/nlsZROdMAS8> (6 min 41 s)
 
 ---
 

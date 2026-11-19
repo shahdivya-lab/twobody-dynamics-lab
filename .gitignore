@@ -9,6 +9,6 @@ desktop.ini
 __pycache__/
 *.pyc
 
-# Large media: the walkthrough video exceeds GitHub's 100 MB file limit and is submitted separately
+# Large media: the walkthrough video is on YouTube (link in README) and exceeds GitHub's 100 MB file limit
 *.mp4
 *.mov
