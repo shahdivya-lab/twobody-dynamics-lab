@@ -2,7 +2,7 @@
 
 A browser-based simulator and teaching lab for the two-body problem. It integrates Newtonian gravity between two point masses with the Velocity Verlet method in SI units, and draws the computed path next to the exact Kepler conic so every result can be checked against theory.
 
-**ME206 course project** · Team: Divya Rahul Shah, Armaan Dixit, Om Mohan Pawar
+**ME206 assignment, Problem 1** · Team: Divya Rahul Shah, Armaan Dixit, Om Mohan Pawar
 
 - **Live app:** <https://shahdivya-lab.github.io/twobody-dynamics-lab/>
 - **Repository:** <https://github.com/shahdivya-lab/twobody-dynamics-lab>
