@@ -1,0 +1,29 @@
+Two-Body Dynamics Lab: validation (node v24.22.1)
+
+Check                                                              Measured           Reference            Result  Note
+Velocity Verlet convergence order (error ratio per halving of dt)  4.00, 4.00         4.00 (second order)  PASS    errors 7.13e-3, 1.78e-3, 4.45e-4
+Time reversibility, fixed step (position error / r0)               1.57e-13           < 1e-10              PASS    
+Energy drift, orbit 1 to orbit 200 (same phase), e = 0             2.83e-14           < 1e-9               PASS    bounded oscillation within an orbit up to 2.44e-11; relative momentum 1.24e-13
+Energy drift, orbit 1 to orbit 200 (same phase), e = 0.64          2.80e-12           < 1e-9               PASS    bounded oscillation within an orbit up to 8.13e-6; relative momentum 8.41e-14
+Energy drift, orbit 1 to orbit 200 (same phase), e = 0.91          6.51e-10           < 1e-9               PASS    bounded oscillation within an orbit up to 4.10e-5; relative momentum 7.11e-14
+Computed path vs exact conic, 3 orbits (max |r - r_conic| / r)     8.42e-6            < 1e-5               PASS    
+Measured period vs Kepler III, e = 0.44 (relative difference)      7.04e-6            < 1e-5               PASS    period from linear interpolation of the swept-angle crossing
+Radial fall: contact time (days)                                   4.8169             4.8169               PASS    relative difference 1.20e-7
+Radial fall: contact speed (km/s)                                  9.8662             9.8661               PASS    relative difference 7.02e-6
+GEO: orbital radius (km)                                           42164.2            42164.2              PASS    
+GEO: period - sidereal day (s)                                     -2.91e-11          |x| < 1e-6           PASS    
+Hohmann LEO 300 km -> GEO: dv1 applied / formula (km/s)            2.4257 / 2.4257    agree to 1e-3        PASS    relative difference 3.94e-6
+Hohmann LEO 300 km -> GEO: dv2 applied / formula (km/s)            1.4668 / 1.4668    agree to 1e-3        PASS    relative difference 4.13e-7
+Hohmann LEO 300 km -> GEO: transfer time measured / formula (h)    5.276 / 5.275      agree to 1e-3        PASS    relative difference 1.38e-4
+Hohmann LEO 300 km -> GEO: arrival radius / r2                     1.000019           1 within 1e-4        PASS    
+Hohmann Earth -> Mars: dv1 applied / formula (km/s)                2.9449 / 2.9448    agree to 1e-3        PASS    relative difference 1.25e-5
+Hohmann Earth -> Mars: dv2 applied / formula (km/s)                2.6491 / 2.6490    agree to 1e-3        PASS    relative difference 2.06e-5
+Hohmann Earth -> Mars: transfer time measured / formula (d)        258.964 / 258.867  agree to 1e-3        PASS    relative difference 3.75e-4
+Hohmann Earth -> Mars: arrival radius / r2                         1.000008           1 within 1e-4        PASS    
+J2: inclination for sun-synchrony at 705 km (deg)                  98.21              98.2 (Landsat 8/9)   PASS    
+J2: inclination for sun-synchrony at 500 km (deg)                  97.40              97.4                 PASS    
+J2: node drift at 705 km, 98.2 deg / required (deg/day)            0.98465 / 0.98565  within 1 %           PASS    
+Kepler III vs observed sidereal periods, largest difference (%)    0.072              < 0.1                PASS    worst: Neptune
+alpha Centauri AB: period (yr)                                     79.76              79.76 (observed)     PASS    
+
+24 of 24 checks passed.
